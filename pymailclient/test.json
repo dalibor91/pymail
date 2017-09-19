@@ -1,0 +1,31 @@
+{
+	"from": "john@doe.com",
+	"recieve": {
+		"to" : [
+			{
+				"email": "test@gmail.com",
+				"name": "John Doe"
+			}
+		], 
+		"cc": [
+			{
+				"email": "john.doe1@gmail.com",
+				"name": "john doe"
+			}
+		],
+		"bcc": [
+			{
+				"email": "john.doe2@gmail.com",
+				"name": "jogn"
+			}
+		]
+	}, 
+	"subject": "This is test", 
+	"body": "this is some body to send", 
+	"attach": [
+		{
+		"name": "test.txt", 
+		"content": "VGhpcyBpcyB0ZXN0"
+		}
+	]
+}
