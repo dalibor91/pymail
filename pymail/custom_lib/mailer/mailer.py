@@ -45,6 +45,7 @@ def sendEmail(data, account, queque):
     if bccAddr != '':
         msg['BCC'] = bccAddr
         
+    body = body.replace('\n', '<br/>')
     msg.attach(MIMEText(body, 'html', 'utf-8'))
     
     if 'attach' in data:
