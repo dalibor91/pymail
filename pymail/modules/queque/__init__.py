@@ -129,7 +129,7 @@ def sendfailed(db, **kwargs):
     
     for i in q.allFailed():
         tmpq = sql3.entity.Queque(db.getConnection())
-        tmpq.load(i['id'])
+        tmpq.fetch(i['id'])
         
         if 'id' in tmpq.data:
             l.error("Unable to find queque")
