@@ -28,7 +28,7 @@ dieOnFail $? "Unable to clone repository to ${TARGET}"
 
 cd "$TARGET/pymail"
 
-pip install -f python-requirements.txt
+pip install -r python-requirements.txt
 
 dieOnFail $? "Unable to install python requirements"
 
