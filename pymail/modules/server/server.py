@@ -114,7 +114,7 @@ PID:  %s
         l.info("Starting new instance of server ID = %s " % server.get('id'))
         server.set('pid', os.getpid())
         server.update()
-        app.run(threaded=False, host=server.get('ip'), port=server.get('port'))
+        app.run(threaded=False, host=server.get('ip'), port=int(server.get('port')))
     except Exception:
         l.error("Error with server %s" % server.get('id'))
         raise
